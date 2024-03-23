@@ -1,3 +1,3 @@
 main : 
-	gcc -o build/main main.c `sdl2-config --cflags --libs`
+	g++ -o build/main src/main.cpp src/Window.cpp `sdl2-config --cflags --libs`
 	./build/main
